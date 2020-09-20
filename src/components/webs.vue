@@ -28,7 +28,7 @@
           <dt><h2>Links</h2></dt>
           <dd>
             <ul>
-              <li><b>Github: </b>Will Be Updated Soon</li>
+              <li><b>Github: </b><a href="https://github.com/atishayj2202/My-Website" target="_blank" rel="noopener">Click Here</a></li>
             </ul>
           </dd>
         </dl>
