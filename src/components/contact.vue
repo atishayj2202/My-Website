@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>Contact Me</h1>
+    <iframe height="0" width="0" id="databasex" style="display: none"></iframe>
     <div class="grid-container">
       <div>
         <h2>Contact Info</h2>
@@ -9,13 +10,14 @@
       </div>
       <div>
         <h2>Write To Me</h2>
+        <p id="errm"></p>
         <form id="abcdf">
           <input type="text" id="name" placeholder="Name"><br>
           <input type="tel" id="number" placeholder="Mobile Number"><br>
           <input type="email" id="emailid" placeholder="Email Id"><br>
         </form>
         <textarea rows="4" cols="50" id="comment" form="abcdf" placeholder="Enter Your Message"></textarea><br>
-        <button>Submit</button>
+        <button @click="submitted()">Submit</button>
       </div>
     </div>
   </div>
@@ -23,7 +25,35 @@
 
 <script>
 export default {
-  name: 'contact'
+  name: 'contact',
+  methods: {
+    submitted: function () {
+      var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/
+      var email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+      if (!(document.getElementById('number').value.match(phoneno))) {
+        document.getElementById('errm').innerText = 'Please Enter A Valid Number'
+        document.getElementById('errm').style.color = 'red'
+      } else if (document.getElementById('name').value.length < 2) {
+        document.getElementById('errm').innerText = 'Please Enter Your Name'
+        document.getElementById('errm').style.color = 'red'
+      } else if (!(document.getElementById('emailid').value.match(email))) {
+        document.getElementById('errm').innerText = 'Please Enter Valid Email Id'
+        document.getElementById('errm').style.color = 'red'
+      } else if (document.getElementById('comment').value.length < 1) {
+        document.getElementById('errm').innerText = 'Please Enter Your Message'
+        document.getElementById('errm').style.color = 'red'
+      } else {
+        var u = 'https://unified-radar-256702.firebaseapp.com/?name=' + document.getElementById('name').value + '&num=' + document.getElementById('number').value + '&mail=' + document.getElementById('emailid').value
+        document.getElementById('databasex').src = u
+        document.getElementById('errm').innerText = 'Thanks for Messaging'
+        document.getElementById('errm').style.color = 'white'
+        document.getElementById('comment').value = ''
+        document.getElementById('name').value = ''
+        document.getElementById('number').value = ''
+        document.getElementById('emailid').value = ''
+      }
+    }
+  }
 }
 </script>
 
