@@ -39,7 +39,7 @@
             <a @click="closeNav('/projects/flutter-builder')">Flutter Builder</a>
             <a @click="closeNav('/projects/pwebsite')">My Website</a>
           </div>
-          <a @click="closeNav('contact')">Contact Me</a>
+          <a @click="closeNav('/contact')">Contact Me</a>
         </div>
       </div>
     </div>
