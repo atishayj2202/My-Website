@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img src="./Images/error.png" style="filter: invert(150%) brightness(200%);" height="50%">
+    <img src="./Images/error.png" style="filter: invert(150%) brightness(200%);" width="100%">
     <h1>Unexpected Error</h1>
   </div>
 </template>
