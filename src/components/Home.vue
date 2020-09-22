@@ -108,10 +108,10 @@ a{
     padding-bottom: 10px;
   }
 }
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 700px) {
   .grid-container > div{
     height: auto;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
 }
 .hello {

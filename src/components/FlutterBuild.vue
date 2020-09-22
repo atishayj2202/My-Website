@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="grid-container">
       <div class="imagebox">
-        <img src="./Images/flutter.png" width="100%-80px" style="background-color: #41B883; -ms-transform: rotate(270deg); transform: rotate(270deg);">
+        <img src="./Images/flutter.png" width="100%-80px" style="background-color: #41B883; -ms-transform: rotate(270deg); transform: rotate(270deg); border-radius: 50px">
       </div>
       <div class="databox">
         <center><h1>Flutter Builder</h1></center>

@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="grid-container">
       <div class="imagebox">
-        <img src="./Images/casino.png" width="100%-80px" style="background-color: white">
+        <img src="./Images/casino.png" width="100%-80px" style="background-color: white; border-radius: 50px">
       </div>
       <div class="databox">
         <center><h1>Poker</h1></center>

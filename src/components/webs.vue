@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="grid-container">
       <div class="imagebox">
-        <img src="./Images/logo.png" width="100%-80px">
+        <img src="./Images/logo.png" width="100%-80px" style="border-radius: 50px">
       </div>
       <div class="databox">
         <center><h1>My Website</h1></center>

@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="grid-container">
       <div class="imagebox">
-        <img src="./Images/calculator.png" width="100%-80px" style="background-color: lightskyblue">
+        <img src="./Images/calculator.png" width="100%-80px" style="background-color: lightskyblue; border-radius: 50px">
       </div>
       <div class="databox">
         <center><h1>Scientific Calculator</h1></center>

@@ -1,7 +1,7 @@
 <template>
   <div id="appbar1">
     <div>
-      <img src="./assets/logo.png" height="80px">
+      <router-link to="/"><img src="./assets/logo.png" height="80px"></router-link>
     </div>
     <div class="bigger">
       <ul>

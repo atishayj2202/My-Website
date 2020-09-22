@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="grid-container">
       <div class="imagebox">
-        <img src="./Images/library.png" width="100%-80px" style="background-color: lightyellow">
+        <img src="./Images/library.png" width="100%-80px" style="background-color: lightyellow; border-radius: 50px">
       </div>
       <div class="databox">
         <center><h1>Automated Library</h1></center>
