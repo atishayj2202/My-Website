@@ -5,8 +5,9 @@
     <div class="grid-container">
       <div>
         <h2>Contact Info</h2>
-        Email 1: <a href="mailto:atishayj.dev@gmail.com">atishayj.dev@gmail.com</a><br>
-        Email 2: <a href="mailto:atishayj2202@gmail.com">atishayj2202@gmail.com</a>
+        Email 1: <a href="mailto:admin@atishay.codes">admin@atishay.codes</a><br>
+        Email 2: <a href="mailto:atishayj.dev@gmail.com">atishayj.dev@gmail.com</a><br>
+        Email 3: <a href="mailto:atishayj2202@gmail.com">atishayj2202@gmail.com</a>
       </div>
       <div>
         <h2>Write To Me</h2>
@@ -14,7 +15,7 @@
         <form id="abcdf">
           <input type="text" id="name" placeholder="Name"><br>
           <input type="tel" id="number" placeholder="Mobile Number"><br>
-          <input type="email" id="emailid" placeholder="Email Id"><br>
+          <input type="email" id="emailid" placeholder="Email Id" required><br>
         </form>
         <textarea rows="4" cols="50" id="comment" form="abcdf" placeholder="Enter Your Message"></textarea><br>
         <button @click="submitted()">Submit</button>

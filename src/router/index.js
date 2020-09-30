@@ -10,6 +10,7 @@ import calculator from '../components/calculator'
 import library from '../components/library'
 import FlutterBuild from '../components/FlutterBuild'
 import webs from '../components/webs'
+import Anything from '../components/Anything'
 
 Vue.use(Router)
 
@@ -61,9 +62,15 @@ export default new Router({
       component: webs
     },
     {
+      path: '/anything',
+      name: 'anything',
+      component: Anything
+    },
+    {
       path: '*',
       name: 'Error',
       component: Error
     }
-  ]
+  ],
+  mode: 'history'
 })
