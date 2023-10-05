@@ -1,18 +1,19 @@
 <template>
-  <div id="app">
     <Appbar/>
     <Mainbar/>
-    <router-view/>
-  </div>
+  <router-view/>
 </template>
 
 <script>
-import Appbar from './Appbar'
-import Mainbar from './Mainbar'
+import Appbar from '@/components/Appbar.vue'
+import Mainbar from '@/components/Mainbar.vue'
 export default {
   name: 'App',
   components: {
     Appbar, Mainbar
+  },
+  mounted () {
+    document.body.style.backgroundColor = '#27282c'
   }
 }
 </script>
